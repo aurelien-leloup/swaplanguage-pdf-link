@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "SwapLanguage PDF Link",
+  "version": "1.0.0",
+  "description": "Open the direct PDF for the document selected in the SwapLanguage file reader.",
+  "content_scripts": [
+    {
+      "matches": ["https://app.swaplanguage.com/*"],
+      "js": ["pdf-tracker.js", "content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
